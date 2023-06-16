@@ -26,7 +26,7 @@ const startServer = async () => {
 
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
-      const serverUrl = `http://localhost:${PORT}/dogs`;
+      const serverUrl = `http://localhost:${PORT}`;
       console.log('\x1b[36m%s\x1b[0m', `Server running on port ${PORT}✨✨✨`);
       console.log(`To access the application, open your browser and navigate to:`);
       console.log(`\x1b[4m\x1b[32m%s\x1b[0m`, serverUrl);
