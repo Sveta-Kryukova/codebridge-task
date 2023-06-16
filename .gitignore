@@ -1,0 +1,17 @@
+# Ignore specific file
+filename.txt
+
+# Ignore files with a specific extension
+*.log
+
+# Ignore a directory and all its contents
+node_modules/
+.npm/
+.idea/
+.vscode/
+dist/
+build/
+.env
+config.js
+
+
