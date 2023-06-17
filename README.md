@@ -10,6 +10,15 @@ Dogshouse Service is a RESTful API built with Node.js and PostgreSQL that allows
   - Support for pagination.
 - Create dog endpoint to add a new dog to the database.
 
+  ## Technologies Used
+
+- Node.js
+- Express.js
+- PostgreSQL
+- Sequelize
+- dotenv
+- pg-hstore
+
 ## Prerequisites
 
 Before running the application, make sure you have the following installed:
@@ -50,7 +59,7 @@ Update the database configuration in src/config/database.js or set the correspon
 6. Start the server:
 
   ```
-    node src/app.js
+    npm run dev
   ```
     
 7. The Dogshouse Service API is now running on http://localhost:3000.
