@@ -102,12 +102,11 @@ To paginate the dog records, use the pageNumber and limit query parameters:
 To create a new dog, send a POST request to /dogs with the dog details in the request body:
 
   ```
-    curl -X POST http://localhost:3000/dogs \
--d '{
-  "name": "Doggy",
-  "color": "red",
-  "tail_length": 173,
-  "weight": 33
+curl -X POST http://localhost:3000/dogs -H "Content-Type: application/json" -d '{
+"name": "Joy",
+"color": "red",
+"tail_length": 173,
+"weight": 33
 }'
   ```
 
