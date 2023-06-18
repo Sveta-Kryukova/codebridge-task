@@ -10,6 +10,18 @@ Dogshouse Service is a RESTful API built with Node.js and PostgreSQL that allows
   - Support for pagination.
 - Create dog endpoint to add a new dog to the database.
 
+  ## Technologies Used
+
+- Node.js <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/9495a727-0f24-4bb2-b4d1-2033194717b0" width="30" height="30">
+- Express.js <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/bea04620-f904-4be0-aad8-bb1103a0e0ef" width="30" height="30">
+
+- PostgreSQL <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/30d8990d-ea76-4a0f-9f9b-3e9b287ef690" width="30" height="30">
+- Sequelize <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/83726249-d082-4e1f-aa89-73e8eea0c96e" width="30" height="30">
+- JavaScript <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/71bfc17c-6cf3-400e-a1f1-d882e475bf2b" width="30" height="30">
+- Nodemon <img src="https://github.com/Sveta-Kryukova/codebridge-task/assets/116656921/302b1fff-c8cd-42fa-ba68-871aaca03ff8" width="30" height="30">
+- dotenv
+- pg-hstore
+
 ## Prerequisites
 
 Before running the application, make sure you have the following installed:
@@ -50,7 +62,7 @@ Update the database configuration in src/config/database.js or set the correspon
 6. Start the server:
 
   ```
-    node src/app.js
+    npm run dev
   ```
     
 7. The Dogshouse Service API is now running on http://localhost:3000.
@@ -90,12 +102,11 @@ To paginate the dog records, use the pageNumber and limit query parameters:
 To create a new dog, send a POST request to /dogs with the dog details in the request body:
 
   ```
-    curl -X POST http://localhost:3000/dogs \
--d '{
-  "name": "Doggy",
-  "color": "red",
-  "tail_length": 173,
-  "weight": 33
+curl -X POST http://localhost:3000/dogs -H "Content-Type: application/json" -d '{
+"name": "Joy",
+"color": "red",
+"tail_length": 173,
+"weight": 33
 }'
   ```
 
